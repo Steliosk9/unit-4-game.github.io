@@ -9,7 +9,75 @@ html body{
     background-size: cover;
   }
 
- .instructions{
-     height: 120px;
+ .instructions{ 
      color:#450497;
+     background-color: white;
+     text-align: center;
+   
  }
+ .instructions p{
+     font-size: 17px;
+     padding-top: 5px;
+    
+ }
+
+ .top {
+ font-size: 25px;
+ padding-top: 10px;
+ }
+
+  .random-number {
+   height: 150px;
+   background-color :#1FA295;
+  }
+
+  .result{
+    background-color:orange;
+    padding: 35px;
+    font-size: 30px;
+    margin: 5px;
+  } 
+
+  .result p{
+   padding-top: 5px;
+   padding-right: 150px; 
+  }
+
+  .crystal {
+    width: 210px;
+    height: 210px;
+  }
+   #winner{
+  font-size: 100px;
+  display: none;
+  }
+  
+  .message{
+    background-color:orange;
+    width: 310px;
+    height: 80px;
+    font-size: 25px;
+    padding-top: 10px;
+
+    margin-left: 130px;
+    margin-top: 5px;
+  }
+
+  .random-number{
+    text-align: center;
+    padding-top:50px;
+    font-weight:bold;
+    font-size: 50px;
+  }
+
+  #losses{
+    padding-left: 4px;
+  }
+
+  #wins{
+    padding-left: 4px;
+  }
+
+  #final{
+    padding-left: 125px;
+  }

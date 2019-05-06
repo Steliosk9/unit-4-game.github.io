@@ -7,26 +7,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/reset.css">
+
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/reset.css">
+        <script type="text/javascript" src="assets/javascript/game.js"></script>
+
 
     <title>CrystalsCollector Game</title>
 
 </head>
 
 <body>
-    <div class="jumbotron jumbotron-fluid">
-        <div class="container">
+    <div class="jumbotron jumbotron-fluid mb-0">
+        <div class="container ">
             <h1 class="display-3 font-weight-normal text-center lead ">CrystalsCollector !</h1>
         </div>
     </div>
       
-    <div class="container">
+    <div class="container-fluid ">
         <div class="row">
-            <div class="instructions">
-                <h3 class="text-center"> Instructions </h3>
+            <div class="instructions col-md-12 px-5 ">
+                <h2 class="top">Instructions</h2>
+                <div class=" m-2 pb-2 ">
                 <p> You will be given a random number at the start of the game.
                     There are four crystals below. By clicking on a crystal you will add a specific amount of points to your
                     total
@@ -35,14 +41,68 @@
                     score goes
                     above the random number.
                     The value of each crystal is hidden from you until you click on it.</p>
+                </div>
             </div>
         </div>
     </div>
+    
+    <div class="contrainer">
+        <div class="row m-3">
+            <div class=" col-md-3 "> </div>
+            <div class=" col-md-3 p-1"> 
+                <div id="target" class="random-number">a</div>
+            </div>
+            <div class=" result col-md-3 text-center">
+                <p id="You-Won"><span id="winner">You Won!!!</span></p>
+                <div class="row ">
+                
+                <p> Wins:<span id="wins"></span></p>
 
-    <hr>
+                
+                 <p>Losses:<span id="losses"></span></p>
+            </div>
+            <div class=" col-md-3"> </div>
+        </div>
+    </div>
+  
+<div class="container">
+    
+    <div class="crystals ">
+           
+        <div class="row pl-20 ">
+               
+            <div class="col-md-3 p-2">
+                <img id="button-yellow" class="crystal" src="assets/images/yellow-crystal.jpg" alt="crystals">
+            </div>
+            <div class="col-md-3 p-2 ">
+                <img id="button-red" class="crystal" src="assets/images/red-crystal.jpg" alt="crystals">
+            </div>
+            <div class="col-md-3 p-2 ">
+                <img id="button-blue" class="crystal" src="assets/images/blue-crystal.jpg" alt="crystals">
+            </div>
+            <div class="col-md-3 p-2 ">
+                <img id="button-green" class="crystal" src="assets/images/green-crystal.jpg" alt="crystals">
+            </div>
+         
+        </div>
+    </div>
+</div>
 
-    <script type="text/javascript" src="assets/javascript/game.js"></script>
+<div class="container">
 
+    <div class="row ">
+        <div class="final-score col-md-6  ">
+            <div class="message text-center pt-4 ">
+                <p>Your Final Score is:</p>
+            </div>
+        </div>
+        <div class="final-score col-md-6">
+            <div class="message pt-4 pl-3">
+                <p id="final"></p>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 
 </html>
